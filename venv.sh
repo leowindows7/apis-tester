@@ -1,13 +1,1 @@
-#!/bin/sh
-
-if type python3 > /dev/null 2>&1 ; then
-	PYTHON=python3
-else
-	echo 'Your platform is not supported : no python'
-	exit 1
-fi
-
-$PYTHON -m venv venv
-. venv/bin/activate
-pip install --upgrade pip==26.0.1
-pip install -r requirements.txt
+#!/bin/sh\n\nif type python3 > /dev/null 2>&1 ; then\n	PYTHON=python3\nelse\n	echo 'Your platform is not supported : no python'\n	exit 1\nfi\n\n$PYTHON -m venv venv\n. venv/bin/activate\npip install --upgrade pip==26.0.1\npip install -r requirements.txt\n
